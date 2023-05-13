@@ -1,0 +1,16 @@
+ main {
+    /* width: 100vw; */
+    /* height: 100vh */
+} 
+
+.hero-content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url("/hero-image.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 13px; */
+    height: 100%;
+    /* width: 100vw; */
+}
