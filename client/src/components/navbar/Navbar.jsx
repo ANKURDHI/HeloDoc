@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Navbar.css"
+
 const Navbar = () => {
   return (
     <header className='container'>
@@ -10,7 +11,7 @@ const Navbar = () => {
 
         <nav>
             <ul>
-                <li><a href="#">Login</a></li>
+                <li><a href="Login.jsx">Login</a></li>
                 <li><a href="#">Signup</a></li>
             </ul>
         </nav>
