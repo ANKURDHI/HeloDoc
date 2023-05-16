@@ -1,14 +1,14 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import Landing from '../../components/landingpage/Landing'
-import Login from '../../components/loginpage/Login'
+import Footer from '../../components/footer/Footer'
 
 const Home = () => {
   return (
     <>     
-      {/* <Navbar/>
-      <Landing/> */}
-      <Login/>
+      <Navbar/>
+      <Landing/>
+      <Footer/>
     </>
   )
 }

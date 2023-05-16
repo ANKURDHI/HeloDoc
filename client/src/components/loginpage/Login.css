@@ -1,25 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
-:root {
-    --linear-grad: linear-gradient(to right, #141E30, #243B55);
-    --grad-clr1: #141E30;
-    --grad-clr2: #243B55;
-}
-
-body {
-    height: 100vh;
-    background: #f6f5f7;
+.registration {
+    height: 100%;
     display: grid;
     place-content: center;
-    font-family: 'Poppins', sans-serif;
 }
-.container{
+
+.login-container{
     position:relative;
     width:850px;
     height:500px;
@@ -27,9 +12,8 @@ body {
     box-shadow: 25px 30px 55px #5557;
     border-radius: 13px;
     overflow: hidden;
-
-
 }
+
 .form-container{
     position: absolute ;
     width: 60%;
@@ -45,7 +29,7 @@ body {
     
     z-index: 2;
 }
-form{
+.register{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -53,7 +37,7 @@ form{
     justify-content: center;
     padding: 0px 50px;
 }
-h1{
+.register h1{
     color:var(--grad-clr1)
 }
 .social-container{
@@ -79,7 +63,7 @@ span{
     margin: 8px 0px;
     width: 100%;
 }
-input{
+.infield input{
     width: 100%;
     padding: 12px 8px;
     background-color: #f3f3f3;
@@ -88,7 +72,7 @@ input{
 
 
 }
-label{
+.infield label{
     position: absolute;
     left: 50%;
     top: 100%;
@@ -99,22 +83,22 @@ label{
     transition: 0.3s;
 }
 
-input:focus ~ label{
+.infield input:focus ~ label{
     width: 100%;
 }
-a{
+.register a{
     color: #333;
     font-size: 14px;
     text-decoration: none;
     margin: 15px 0px;
 
 }
-a.forgot{
+.register a.forgot{
     padding-bottom: 3px;
     border-bottom: 2px solid #EEE;
 
 }
-button{
+.login-container button{
     border-radius: 20px;
     border: 1px solid var(--grad-clr1);
     background: var(--grad-clr2);
@@ -189,7 +173,7 @@ button{
 .overlay-panel h1{
     color: #FFF;
 }
-p{
+.overlay-container p{
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
