@@ -1,0 +1,99 @@
+[
+      {
+        "id": "1",
+        "name": "Dr. John Smith",
+        "personal_info": {
+          "age": 45,
+          "gender": "Male",
+          "location": "New York"
+        },
+        "description": "Dr. John Smith is a highly experienced general physician with over 20 years of practice.",
+        "specialization": "General Medicine",
+        "charge_per_hour": 150
+      },
+      {
+        "id": "2",
+        "name": "Dr. Emily Johnson",
+        "personal_info": {
+          "age": 38,
+          "gender": "Female",
+          "location": "San Francisco"
+        },
+        "description": "Dr. Emily Johnson is a compassionate pediatrician who loves working with children.",
+        "specialization": "Pediatrics",
+        "charge_per_hour": 180
+      },
+      {
+        "id": "3",
+        "name": "Dr. Michael Davis",
+        "personal_info": {
+          "age": 52,
+          "gender": "Male",
+          "location": "Chicago"
+        },
+        "description": "Dr. Michael Davis is a renowned cardiologist specializing in heart disease prevention and treatment.",
+        "specialization": "Cardiology",
+        "charge_per_hour": 250
+      },
+      {
+        "id": "4",
+        "name": "Dr. Sophia Martinez",
+        "personal_info": {
+          "age": 41,
+          "gender": "Female",
+          "location": "Los Angeles"
+        },
+        "description": "Dr. Sophia Martinez is a skilled dermatologist known for her expertise in skin conditions.",
+        "specialization": "Dermatology",
+        "charge_per_hour": 200
+      },
+      {
+        "id": "5",
+        "name": "Dr. William Thompson",
+        "personal_info": {
+          "age": 48,
+          "gender": "Male",
+          "location": "Houston"
+        },
+        "description": "Dr. William Thompson is an orthopedic surgeon specializing in joint replacements and sports injuries.",
+        "specialization": "Orthopedics",
+        "charge_per_hour": 300
+      },
+      {
+        "id": "6",
+        "name": "Dr. Olivia Clark",
+        "personal_info": {
+          "age": 37,
+          "gender": "Female",
+          "location": "Miami"
+        },
+        "description": "Dr. Olivia Clark is a dedicated gynecologist providing comprehensive women's healthcare.",
+        "specialization": "Gynecology",
+        "charge_per_hour": 180
+      },
+      {
+        "id": "7",
+        "name": "Dr. Benjamin Lee",
+        "personal_info": {
+          "age": 44,
+          "gender": "Male",
+          "location": "Seattle"
+        },
+        "description": "Dr. Benjamin Lee is a skilled neurologist specializing in the diagnosis and treatment of neurological disorders.",
+        "specialization": "Neurology",
+        "charge_per_hour": 280
+      },
+      {
+        "id": "8",
+        "name": "Dr. Lily Chen",
+        "personal_info": {
+          "age": 39,
+          "gender": "Female",
+          "location": "Boston"
+        },
+        "description": "Dr. Lily Chen is a respected psychiatrist helping patients overcome mental health challenges.",
+        "specialization": "Psychiatry",
+        "charge_per_hour": 220
+      }
+]
+  

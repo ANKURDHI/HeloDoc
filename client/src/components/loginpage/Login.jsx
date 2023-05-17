@@ -5,10 +5,10 @@ import "./Login1.js"
 
 const Login = () => {
   return (
-    <main>
-       <div className="container" id="container">
+    <main className='registration'>
+       <div className="login-container" id="container">
         <div className="form-container sign-up-container">
-            <form action="#">
+            <form action="#" className='register'>
                 <h1>Create Account</h1>
                 
                 <div className="infield">
@@ -32,7 +32,7 @@ const Login = () => {
             </form>
         </div>
         <div className="form-container sign-in-container">
-            <form action="#">
+            <form action="#" className='register'>
                 <h1>Sign in</h1>
                
                 <div className="infield">
@@ -64,12 +64,6 @@ const Login = () => {
         </div>
     </div>
     <script src='Login1.js'/>
-
-   
-
-   
-
-
     </main>
   )
 }
