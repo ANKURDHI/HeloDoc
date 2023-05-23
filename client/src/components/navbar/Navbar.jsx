@@ -7,15 +7,15 @@ const Navbar = () => {
     <header className='container'>
        <Link to="/">
         <div className="logo">
-              <img src="../../public/logo.avif" alt="" />
-              <h2>Helodoc</h2>   
+              <img src="/logo.avif" alt="" />
+              <h1>Helodoc</h1>   
           </div>
        </Link>
 
         <nav>
             <ul>
                <Link to="/login">
-                  <li><a href="Login.jsx">Login</a></li>
+                  <button>Login</button>
                </Link>
             </ul>
         </nav>
