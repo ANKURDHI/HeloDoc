@@ -4,7 +4,22 @@ import "./Login1.js"
 
 
 const Login = () => {
-  return (
+    const handleclick= ()=>{
+        fetch("http://localhost:8080/api/patient/getAllPatient",{
+            method:"GET",
+        //     body:JSON.stringify({
+        //         email:"first@gmail.com",
+        //         password:"27"
+        //     }),
+        //     headers:{
+        //         "Content-type":"application/json"
+        //     }
+        })
+        .then(response=>response.json())
+        .then(json=>console.log(json))
+    }
+
+    return (
     <main className='registration'>
        <div className="login-container" id="container">
         <div className="form-container sign-up-container">
@@ -44,7 +59,7 @@ const Login = () => {
                     <label></label>
                 </div>
                 <a href="#" className="forgot">Forgot your password?</a>
-                <button>Sign In</button>
+                <button onClick={handleclick}>Sign In</button>
             </form>
         </div>
         <div className="overlay-container" id="overlayCon">

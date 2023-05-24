@@ -6,7 +6,7 @@ const Doctors = () => {
     const [data, setData] = useState([])
     useEffect(() => {    
       const getData = async() => {
-         const json = await fetch("http://localhost:3000/doctors");
+         const json = await fetch("http://localhost:8080/doctors");
          const response = await json.json();
          setData(response)
       }
