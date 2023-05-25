@@ -2,18 +2,18 @@ import React from 'react'
 import "./Login.css"
 import "./Login1.js"
 
-
+// only for testing changes required (handleclick)
 const Login = () => {
     const handleclick= ()=>{
-        fetch("http://localhost:8080/api/patient/getAllPatient",{
-            method:"GET",
-        //     body:JSON.stringify({
-        //         email:"first@gmail.com",
-        //         password:"27"
-        //     }),
-        //     headers:{
-        //         "Content-type":"application/json"
-        //     }
+        fetch("http://localhost:8080/api/patient/checkPatient",{
+            method:"POST",
+            body:JSON.stringify({
+                password:"abc123",
+                patientEmail:"umesh@gmail.com",
+            }),
+            headers:{
+                "Content-type":"application/json"
+            }
         })
         .then(response=>response.json())
         .then(json=>console.log(json))

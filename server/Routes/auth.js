@@ -1,13 +1,10 @@
 const express= require("express");
 const router=express.Router();
 
+const patientController = require('../controllers/patientController');
 
-const appointmentController = require('../controllers/appointmentController.js')
-const doctorController = require('../controllers/doctorController')
-const doctorscheduleController = require('../controllers/doctorscheduleController.js')
-const patientController = require('../controllers/patientController')
-
-router.get('/getAllPatient', patientController.getAllPatient);
+router.post('/checkPatient', patientController.checkPatient);
+router.post('/addPatient', patientController.addPatient);
 
 
 module.exports=router;
