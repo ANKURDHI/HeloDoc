@@ -5,11 +5,20 @@ import "./Login1.js"
 // only for testing changes required (handleclick)
 const Login = () => {
     const handleclick= ()=>{
-        fetch("http://localhost:8080/api/patient/checkPatient",{
+        fetch("http://localhost:8080/api/doctor/addDoc",{
             method:"POST",
             body:JSON.stringify({
-                password:"abc123",
-                patientEmail:"umesh@gmail.com",
+                
+                    doctorAddress: "Raj Nagar",
+                    doctorDOB:"2000-09-23",
+                    doctorEmail: "smith@gmail.com",
+                    doctorFirstName:"Dr John",
+                    doctorLastName:"Smith",
+                    doctorPhone: "9555590430",
+                    doctorId: "1",
+                    password:"goku"
+              
+            
             }),
             headers:{
                 "Content-type":"application/json"
