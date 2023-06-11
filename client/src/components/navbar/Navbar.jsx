@@ -1,8 +1,10 @@
 import React from 'react'
 import "./Navbar.css"
-import {Link} from "react-router-dom"
+import {Link, useParams} from "react-router-dom"
 
 const Navbar = () => {
+   const a = useParams();
+   console.log(a)
   return (
     <header className='container'>
        <Link to="/">
