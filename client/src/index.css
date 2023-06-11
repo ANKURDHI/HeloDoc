@@ -65,3 +65,18 @@ button:hover {
   background-color: white;
   color:  rgb(7, 113, 219);
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form > * {
+  width: 50%;
+}
+
+input {
+  padding: 5px;
+  font-size: 1.1rem;
+}

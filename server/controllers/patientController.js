@@ -5,13 +5,9 @@ const db = require('../models')
 // const DoctorSchedule = db.doctorschedule
 const Patient = db.patient
 
-
-
 const getAllPatient = async (req, res) => {
-
     let products = await Patient.findAll({})
     res.status(200).send(products)
-
 }
 
 
