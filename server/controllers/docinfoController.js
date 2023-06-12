@@ -1,8 +1,5 @@
 const db = require('../models')
 
-
-
-
 // create main Model
 const Docinfo = db.docinfo
 
@@ -12,7 +9,7 @@ const Docinfo = db.docinfo
 // 1. create docinfo
 
 const addDocInfo = async (req, res) => {
-    
+    console.log('adddocinfo');
 
     let info = {
         doctorId: req.body.doctorId,
@@ -25,11 +22,12 @@ const addDocInfo = async (req, res) => {
         
     }
 try{
-
+console.log('here');
     const docinfo = await Docinfo.create(info)
     res.status(200).send(docinfo)
     console.log(docinfo)
 }catch(e){
+    console.log('error');
     console.log(e);
 }
 
@@ -40,7 +38,7 @@ try{
 // 2. get all docinfo
 
 const getdocinfo = async (req, res) => {
-
+console.log("here");
     let docinfo = await Docinfo.findAll({})
     res.status(200).send(docinfo)
 

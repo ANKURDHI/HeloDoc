@@ -5,17 +5,15 @@ const {Sequelize, DataTypes} = require('sequelize');
 const sequelize = new Sequelize(
     dbConfig.DB,
     dbConfig.USER,
-    dbConfig.PASSWORD, {
+    dbConfig.PASSWORD,
+    {
         host: dbConfig.HOST,
         dialect: dbConfig.dialect,
-        operatorsAliases: false,
-
         pool: {
             max: dbConfig.pool.max,
             min: dbConfig.pool.min,
             acquire: dbConfig.pool.acquire,
             idle: dbConfig.pool.idle
-
         }
     }
 )
@@ -43,8 +41,6 @@ db.sequelize.sync({ force: false })
 .then(() => {
     console.log('yes re-sync done!')
 })
-
-
 
 // 1 to Many Relation
 // appointment-patient

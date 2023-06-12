@@ -1,0 +1,19 @@
+.doctor {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.doctor-image {
+    /* width: 20%; */
+    flex-basis: 25%;
+}
+
+.doctor-info {
+    flex-basis: 75%;
+}
+
+.doctor-image img {
+    width: 300px;
+}

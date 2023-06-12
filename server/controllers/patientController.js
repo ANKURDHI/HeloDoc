@@ -44,13 +44,17 @@ const checkPatient = async (req, res) => {
         console.log(' found');
           res.status(200).send("Found")
         }
-
+    }
+const getAllPatient = async (req, res) => {
+    let products = await Patient.findAll({})
+    res.status(200).send(products)
 }
 
 
 
 module.exports = {
     checkPatient,
-    addPatient
+    addPatient,
+    getAllPatient
     
 }
