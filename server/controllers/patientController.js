@@ -38,11 +38,12 @@ const checkPatient = async (req, res) => {
     password: `${req.body.password}`} })
     if (products === null) {
         console.log('Not found!');
-        res.status(200).send("Not Found")
+        res.status(404).send("Not Found")
       } 
       else{
         console.log(' found');
           res.status(200).send("Found")
+          
         }
     }
 const getAllPatient = async (req, res) => {
