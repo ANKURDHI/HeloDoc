@@ -80,3 +80,7 @@ input {
   padding: 5px;
   font-size: 1.1rem;
 }
+
+section {
+  margin-top: 0;
+}

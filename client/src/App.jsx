@@ -4,6 +4,7 @@ import Doctors from './pages/doctors/Doctors'
 import Login from "./components/auth/Login"
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
 import Auth from './pages/auth/Auth'
+import Dashboard from './components/dashboard/Dashboard'
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/doctors' element={<Doctors/>}/>
-        <Route path='/login' element={<Auth/>}/>         
+        <Route path='/auth' element={<Auth/>}/>         
+        <Route path='/dashboard' element={<Dashboard role="doctor"/>}/>         
       </Routes>
     </Router>
   )
