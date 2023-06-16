@@ -28,6 +28,24 @@ const Login = ({role,setRole}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
    //network requests
+   fetch('http://localhost:8080/api/patient/checkPatient', {
+      headers: {
+          'Content-type': 'application/json'
+      },
+      method: 'POST',
+      body: JSON.stringify({ patientEmail: loginData.email, password: loginData.password })
+  })
+      .then(response => {
+        if(response.status==404){
+          console.log("notfound")
+        }
+        else{
+          console.log("FOUND")
+          localStorage.setItem("email", loginData.email);
+// localStorage.getItem("lastname");
+        }
+      
+      })
   };
     return (
      <form onSubmit={handleSubmit}>
