@@ -14,7 +14,9 @@ const Signup = ({role}) => {
   });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, 
+      [e.target.name]: e.target.value 
+    });
   };
 
   const handleSubmit = (e) => {
@@ -27,7 +29,9 @@ const Signup = ({role}) => {
       <form onSubmit={handleSubmit}>
         <label>
           First Name:
-          <input type="text" name="firstname" value={formData.firstname} onChange={handleChange} required />
+          <input type="text" name="firstname" 
+          value={formData.firstname} 
+          onChange={handleChange} required />
         </label>
         <br />
         <label>

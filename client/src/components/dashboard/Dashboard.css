@@ -1,0 +1,20 @@
+.sidebar {
+    background-color: blue;
+    height: 100vh;
+    width: 30vh;
+    text-align: center;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    /* padding: 20px; */
+}
+
+.sidebar li {
+    background-color: rgb(215, 202, 202);
+    width: 100%;
+}
